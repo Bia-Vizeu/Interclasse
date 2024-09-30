@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #212121;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: rgb(33, 57, 81);
+    padding: 20px 0;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+.forms {
+    background-color: #ffffff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgb(33, 57, 81);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.formulario input[type="submit"] {
+    background-color: rgb(33, 57, 81);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #007bff; 
+}
+
+footer {
+    background-color: rgb(33, 57, 81);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-left: 0;
+    }
+
+    .forms {
+        padding: 20px;
+    }
+}
